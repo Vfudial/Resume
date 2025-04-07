@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #000000;
+}
+
+.container {
+	margin: 0 50px;
+}
+
+h1 {
+	color: #fff;
+	margin-top: 15px;
+	font-size: 1.5em;
+	font-weight: 600;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.top {
+	display: flex;
+	justify-content: space-around;
+}
+.about-me,
+.table-about {
+	background-color: #fff;
+	color: #000000;
+	width: 50vw;
+	padding: 15px;
+	text-align: center;
+	border: 2px solid #fff;
+	border-radius: 10vh;
+	transition: all 0.5s ease;
+	display: flex;
+	justify-content: space-around;
+}
+
+.table-about {
+	width: 30vw;
+	display: table-column;
+}
+
+.table-about p {
+	padding-bottom: 10px;
+}
+
+.table-about table {
+	width: 100%;
+	height: 80%;
+	border: 1px solid rgb(0, 0, 0);
+}
+
+.table-about table td {
+	background-color: rgb(255, 245, 235);
+	width: 20%;
+	text-align: center;
+	padding: auto;
+	transition: all 0.6 ease;
+}
+
+.table-about table td:hover {
+	background-color: rgb(255, 204, 110);
+}
+
+.about-me .text {
+	color: #000000;
+	text-align: left;
+	margin: auto 0;
+	width: 60%;
+	text-align: justify;
+}
+
+.about-me img {
+	height: 30vh;
+	border-radius: 15px;
+	box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.4);
+}
+.card {
+	display: flex;
+	justify-content: space-between;
+	border: 2px solid #ffffff;
+	border-radius: 10svh;
+	height: 30vh;
+	align-items: center;
+	width: 40vw;
+	padding: 15px;
+	margin: 20px 20px 40px;
+	transition: all 0.5s ease-out;
+}
+
+.card:hover,
+.about-me:hover,
+.table-about:hover {
+	transform: scale(1.1);
+}
+
+.hero-block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.purple {
+	background-color: #fe9bfe;
+	width: 30vw;
+}
+
+.blue {
+	background-color: rgb(24, 255, 228);
+	color: #000000;
+}
+
+.blue {
+	display: flex;
+	width: 50vw;
+	justify-content: space-around;
+}
+
+.blue ul {
+	width: 60%;
+	text-align: justify;
+}
+
+.social-media ul {
+	width: 100vh;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	background-color: inherit;
+	margin: 5px auto;
+}
+
+.social-media a {
+	text-decoration: none;
+	color: #fff;
+}
+.social-media p {
+	text-align: center;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	font-weight: 500;
+	font-size: 1.2em;
+	color: #fff;
+}
+
+.social-media .btn {
+	font-weight: 400;
+	text-align: center;
+	display: block;
+	width: 10vw;
+	background-color: rgb(128, 83, 0);
+	padding: 20px;
+	border-radius: 5vh;
+	transition: all 0.5s ease;
+}
+
+.social-media .btn:hover {
+	transform: scale(1.05);
+}
+
+.social-media .btn:active {
+	background-color: rgb(213, 139, 2);
+}
+
+@media (max-width: 750px) {
+	.hero-block {
+		display: block;
+		width: 100%;
+	}
+
+	.card {
+		width: 100%;
+	}
+
+	.top {
+		display: block;
+	}
+
+	.about-me {
+		width: 100%;
+	}
+
+	.table-about {
+		width: 100%;
+	}
+}
